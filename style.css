@@ -1,0 +1,132 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --border-color: #ccc;
+  --header-bg: #f4f4f4;
+}
+
+body.dark {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --border-color: #444;
+  --header-bg: #1e1e1e;
+}
+
+* {
+  transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  margin: 20px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+img {
+  border-radius: 5px;
+}
+
+/* 👇 Подсветка фото при наведении */
+.photo-highlight {
+  transition: box-shadow 0.3s ease;
+}
+.photo-highlight:hover {
+  box-shadow: 0 0 15px 5px white;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 8px 12px;
+  border: 1px solid var(--border-color);
+}
+
+th {
+  background-color: var(--header-bg);
+}
+
+hr {
+  margin: 30px 0;
+  border-color: var(--border-color);
+}
+
+.social-icons img {
+  width: 25px;
+  margin-right: 10px;
+}
+
+.centered-photo {
+  text-align: center;
+}
+
+.column-table td {
+  vertical-align: top;
+}
+
+.column-border {
+  border-left: 2px solid var(--border-color);
+}
+
+.center-heading {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#page-wrapper {
+  margin-top: 1cm;
+}
+
+#change-theme-btn {
+  margin-left: 10px;
+  font-size: 1em;
+  padding: 4px 8px;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  background-color: var(--header-bg);
+  color: var(--text-color);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#change-theme-btn:hover {
+  background-color: var(--border-color);
+}
+
+
+/* Подсветка фото (белая в тёмной теме, чёрная в светлой) */
+.photo-highlight {
+  transition: box-shadow 0.3s ease;
+}
+
+body.dark .photo-highlight:hover {
+  box-shadow: 0 0 15px 5px white;
+}
+
+body:not(.dark) .photo-highlight:hover {
+  box-shadow: 0 0 15px 5px black;
+}
+
+#meow-emoji {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+#meow-emoji:hover {
+  transform: scale(1.4);
+}
+
+#meow-emoji {
+  display: inline-block;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+#meow-emoji:active {
+  transform: scale(1.4);
+}
