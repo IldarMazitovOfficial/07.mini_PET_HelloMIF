@@ -130,3 +130,9 @@ body:not(.dark) .photo-highlight:hover {
 #meow-emoji:active {
   transform: scale(1.4);
 }
+
+.social-icon {
+  width: 160px;
+  height: 43px;
+  transition: transform 0.3s ease;
+}
