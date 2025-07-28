@@ -144,3 +144,58 @@ body:not(.dark) .photo-highlight:hover {
   background-color: var(--header-bg);
   border-radius: 8px;
 }
+
+@media (max-width: 768px) {
+  .column-table {
+    display: block;
+    width: 100%;
+  }
+
+  .column-table td {
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 20px;
+  }
+
+  .column-table tr {
+    display: block;
+    width: 100%;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+    width: 100%;
+  }
+
+  th, td {
+    white-space: nowrap;
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+
+  .social-icons img {
+    width: 32px;
+  }
+
+  .social-icon {
+    width: 100px;
+    height: auto;
+  }
+
+  .centered-photo img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  #meow-emoji {
+    font-size: 24px;
+  }
+}
