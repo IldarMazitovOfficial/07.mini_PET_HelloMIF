@@ -136,3 +136,11 @@ body:not(.dark) .photo-highlight:hover {
   height: 43px;
   transition: transform 0.3s ease;
 }
+
+.block {
+  border: 1px solid var(--border-color);
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: var(--header-bg);
+  border-radius: 8px;
+}
